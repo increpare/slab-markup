@@ -27,7 +27,8 @@ triple: none
 examples:
 	file: personExample
 	description: none
-	translation: I am Person A you are Person B.```
+	translation: I am Person A you are Person B.
+```
   
 to parse it, just do 
 

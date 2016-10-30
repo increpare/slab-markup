@@ -42,7 +42,7 @@ and it will look like this:
   },
   {
     "description": "string-wrapping support",
-    "foo": "so many bars all the bars in the universe and some bars from even some other universes really a lot of bars."
+    "example": "so many bars all the bars in the universe and some bars from even some other universes really a lot of bars."
   },
   {
     "description": "array of strings",

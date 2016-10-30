@@ -1,6 +1,4 @@
-![Alt screenshot](sshot.png?raw=true)
-
-custom data format - contains node code to parse one, and sublime text 3 syntax highlighting file
+custom data format - contains js code to parse one, and sublime text 3 syntax highlighting file
 
 here's an example of a file:
 
@@ -35,3 +33,7 @@ var db = slab.loadFile('myfile.slab');
 ```
 
 (Warning, it doesn't support depths of >2 right now...)
+
+To get the syntax highlighter to work, copy the .sublime-syntax file to your Packages/User directory in sublime text.
+
+![Alt screenshot](sshot.png?raw=true)

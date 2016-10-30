@@ -1,5 +1,5 @@
-SLAB-MARKUP - SLAB 1.2 parser for JavaScript (+sublime text syntax files)
-=================================================
+A SLAB parser for JavaScript
+============================
 
 [![NPM version](https://img.shields.io/npm/v/slab-markup.svg)](https://www.npmjs.org/package/slab-markup)
 
@@ -117,7 +117,7 @@ var slab = require("slab-markup")
 var dat = slab.parse(myString)
 ```
 
-To parse an file, do: 
+To parse a file, do: 
 
 ```
 var slab = require("slab-markup)

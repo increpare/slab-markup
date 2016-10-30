@@ -61,6 +61,7 @@ function parseString(s){
 
 	var curObject={};
 	var subObject=[];
+	var curKey="";
 	result.push(curObject);
 	
 	var state = "REG"//"PUSHing to subobject//conCATenating strings"
@@ -81,6 +82,7 @@ function parseString(s){
 					var key = l[2]
 					subObject=[]
 					curObject[key]=subObject
+					curKey=key;
 					state="PUSH"
 				} else if (l.length===4){
 					//[indent,colon,key,value]
@@ -103,7 +105,7 @@ function parseString(s){
 						state="REG";
 						break;
 					} else {
-						subObject.push([]);
+						curObject[curKey].push({});
 					}
 				} else if (l.length===3){
 					//if it's an unindented record, break out and try again in regular state
@@ -127,10 +129,11 @@ function parseString(s){
 					var colon=l[1]
 					var key=l[2]
 					var value=l[3]
-					if (subObject.length===0){
-						subObject.push([])
+					if (curObject[curKey].length===0){
+						curObject[curKey].push({});
 					}
-					subObject[subObject.length-1][key]=value
+					curObject[curKey][curObject[curKey].length-1][key]=value
+
 				}
 
 				break;
@@ -153,8 +156,10 @@ function loadFile(fileName){
 	return dat
 }
 
-//var loaded = loadFile("../res/docDatabase.slab")
-//log(loaded)
+if (require.main === module) {
+	var loaded = loadFile("../res/example.slab")
+	log(JSON.stringify(loaded))
+}
 
 module.exports.parseString=parseString
 module.exports.loadFile=loadFile

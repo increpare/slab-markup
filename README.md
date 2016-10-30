@@ -101,7 +101,7 @@ The equivalent YAML is
     ding: bat
 ```
 
-Which is basically the same as the SLAB version, and the libraries for parsing that are far more robust/numerous. So you should probably use that instead.
+(Which is basically the same as the SLAB version, and the libraries for parsing that are far more robust/numerous. So you should probably use that instead.)
 
 API
 ---
@@ -124,6 +124,5 @@ var db = slab.parseSync('myfile.slab');
 Sublime Text 3 Syntax Highlighting
 ----------------------------------
 
-To get the syntax highlighter to work, copy the .sublime-syntax file to your Packages/User directory in sublime text.
+To get the syntax highlighter to work, copy the [slab.sublime_syntax](https://raw.githubusercontent.com/increpare/slab-markup/master/slab.sublime_syntax) file to your Packages/User directory in sublime text.
 
-![Alt screenshot](sshot.png?raw=true)

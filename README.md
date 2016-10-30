@@ -1,4 +1,4 @@
-custom data format - contains js code to parse one, and sublime text 3 syntax highlighting file
+stupid custom data format - contains js code to parse, and sublime text 3 syntax highlighting file
 
 here's an example of a file:
 

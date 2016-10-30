@@ -1,3 +1,5 @@
+![Alt screenshot](sshot.png?raw=true)
+
 custom data format - contains node code to parse one, and sublime text 3 syntax highlighting file
 
 here's an example of a file:

@@ -4,25 +4,25 @@ here's an example of a file:
 ```
 name: Dot
 description: none
-uses: none
-lines: none
-triple: none
+triples: I have many triples
 examples: 
 	file: dotExample
 	description: A dot sign is used to split lines 
 			into multiple parts to allow aggregate 
 			statements.
-	translation: Person A is feeling good about 
-      this new file format.
+	translation: Person A is feeling good about this new 
+			file format.
+			
+	file: crossExample
+	description: A dot sign is used to split lines 
+			into multiple parts to allow aggregate 
+			statements.
+	translation: Person A is feeling good about  this new 
+			file format.
 
 name: Identity
-description: Used to indicate who the speaker is and who they are addressing.
-uses: ABGH
-lines:
-	A has an identity
-	You are B.
-	I am G.
-	Any H
+description: Used to indicate who the speaker is and who they 
+		are addressing.
 triple: none
 examples:
 	file: personExample

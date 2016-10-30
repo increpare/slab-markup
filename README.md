@@ -4,7 +4,12 @@ here's an example of a file:
 ```
 name: Dot
 description: none
-triples: I have many triples
+triples: "none" is a special keyword that's parsed into "null" in javascript.
+lines:
+	This is 
+	going to
+	be an 
+	array of four strings.
 examples: 
 	file: dotExample
 	description: A dot sign is used to split lines 

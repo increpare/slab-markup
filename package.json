@@ -1,0 +1,24 @@
+{
+  "name": "slab-markup",
+  "version": "0.2.0",
+  "description": "A package for parsing SLAB markup files.",
+  "main": "slab.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/increpare/slab-markup.git"
+  },
+  "keywords": [
+    "parser",
+    "slab",
+    "slab-markup"
+  ],
+  "author": "Stephen Lavelle",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/increpare/slab-markup/issues"
+  },
+  "homepage": "https://github.com/increpare/slab-markup"
+}

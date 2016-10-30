@@ -101,7 +101,7 @@ The equivalent YAML is
     ding: bat
 ```
 
-(Which is basically the same as the SLAB version, and the libraries for parsing that are far more robust/numerous. So you should probably use that instead.)
+(Which is basically the same as the SLAB version, and the libraries for parsing that are far more robust/numerous. So you should probably use that instead).
 
 API
 ---
@@ -110,14 +110,14 @@ To parse a string, do
 
 ```
 var slab = require("slab-markup")
-var db = slab.parse(myString);
+var dat = slab.parse(myString)
 ```
 
 To parse an file, do: 
 
 ```
 var slab = require("slab-markup)
-var db = slab.parseSync('myfile.slab');
+var dat = slab.parseSync('myfile.slab')
 ```
 
 

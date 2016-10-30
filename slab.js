@@ -161,5 +161,5 @@ if (require.main === module) {
 	log(JSON.stringify(loaded))
 }
 
-module.exports.parseString=parseString
-module.exports.loadFile=loadFile
+module.exports.parse=parseString
+module.exports.parseFileSync=loadFile

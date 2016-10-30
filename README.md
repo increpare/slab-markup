@@ -3,9 +3,7 @@ SLAB-MARKUP - SLAB 1.2 parser for JavaScript (+sublime text syntax files)
 
 [![NPM version](https://img.shields.io/npm/v/slab-markup.svg)](https://www.npmjs.org/package/slab-markup)
 
-Human-friendly markup format.
-
-This repository contains a javasript module to read it, and a Sublime Text 3 syntax highlighting file.
+A human-friendly markup format.
 
 Installation
 ------------
@@ -15,6 +13,12 @@ Installation
 ```
 npm install slab-markup
 ```
+
+
+###Sublime Text 3 Syntax Highlighting
+
+To get the syntax highlighter to work, copy the [slab.sublime_syntax](https://raw.githubusercontent.com/increpare/slab-markup-sublime/master/slab.sublime_syntax) file to your Packages/User directory in Sublime Text.
+
 
 EXAMPLE
 -------
@@ -119,10 +123,4 @@ To parse an file, do:
 var slab = require("slab-markup)
 var dat = slab.parseSync('myfile.slab')
 ```
-
-
-Sublime Text 3 Syntax Highlighting
-----------------------------------
-
-To get the syntax highlighter to work, copy the [slab.sublime_syntax](https://raw.githubusercontent.com/increpare/slab-markup/master/slab.sublime_syntax) file to your Packages/User directory in sublime text.
 

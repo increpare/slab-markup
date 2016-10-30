@@ -121,6 +121,6 @@ To parse a file, do
 
 ```
 var slab = require("slab-markup)
-var dat = slab.parseSync('myfile.slab')
+var dat = slab.parseFileSync('myfile.slab')
 ```
 

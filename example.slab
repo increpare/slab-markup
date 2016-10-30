@@ -1,33 +1,20 @@
-name: Person A
-description: none
-uses: none
-lines: none
-triple: none
-examples: none
+description: a simple key value pair
+example: bar
 
-name: Dot
-description: none
-uses: none
-lines: none
-triple: none
-examples: 
-	file: dotExample
-	description: A dot sign is used to split lines 
-			into multiple parts to allow aggregate 
-			statements.
-	translation: Person A is feeling good about 
-      this new file format.
+description: string-wrapping support
+foo: so many bars all the bars in the universe
+	and some bars from even some other 
+	universes really a lot of bars.
 
-name: Identity
-description: Used to indicate who the speaker is and who they are addressing.
-uses: ABGH
-lines:
-	A has an identity
-	You are B.
-	I am G.
-	Any H
-triple: none
-examples:
-	file: personExample
-	description: none
-	translation: I am Person A you are Person B.
+description: array of strings
+example:
+	one string
+	another string
+
+description: array of structures
+example:
+	foo:bar
+	ding:bat
+
+	foo:bar
+	ding:bat

@@ -15,13 +15,17 @@ contexts:
     - match: (.)
       set: key
   key:
-    - meta_scope: entity.other.attribute-name
+    - meta_scope: support.constant.property-value
     - match: (:)
       set: colon
   colon:
     - meta_scope: punctuation.separator
-    - match: (.)
-      set: value
+    - match: (\n)
+      set: main   
+    - match: ()
+      set: value   
   value:
+    - match: \s*none\s*
+      scope: constant.language
     - match: (.*)$
       set: main

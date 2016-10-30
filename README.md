@@ -3,7 +3,7 @@ custom data format - contains js code to parse one, and sublime text 3 syntax hi
 here's an example of a file:
 
 ```
-description: a simple key value pair
+description: a simple key-value pair
 example: bar
 
 description: string-wrapping support

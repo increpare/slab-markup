@@ -1,6 +1,14 @@
-stupid custom data format - contains js code to parse, and sublime text 3 syntax highlighting file
+SLAB-MARKUP - SLAB 1.2 parser for JavaScript (+sublime text syntax files)
+=================================================
 
-here's an example of a file:
+[![NPM version](https://img.shields.io/npm/v/slab-markup.svg)](https://www.npmjs.org/package/slab-markup)
+
+
+Human-friendly markup format.
+
+This repository contains a javasript module to read it, and a Sublime Text 3 syntax highlighting file.
+
+Here's an example of a SLAB file:
 
 ```
 description: a simple key-value pair
@@ -25,7 +33,7 @@ example:
 	ding:bat
 ```
   
-to parse it, just do 
+To parse it, just do: 
 
 ```
 var slab = require("./js/slab")

@@ -1,4 +1,4 @@
-description: a simple key value pair
+description: a simple key-value pair
 example: bar
 
 description: string-wrapping support

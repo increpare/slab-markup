@@ -117,7 +117,7 @@ var slab = require("slab-markup")
 var dat = slab.parse(myString)
 ```
 
-To parse a file, do: 
+To parse a file, do
 
 ```
 var slab = require("slab-markup)

@@ -3,11 +3,21 @@ SLAB-MARKUP - SLAB 1.2 parser for JavaScript (+sublime text syntax files)
 
 [![NPM version](https://img.shields.io/npm/v/slab-markup.svg)](https://www.npmjs.org/package/slab-markup)
 
-
 Human-friendly markup format.
 
 This repository contains a javasript module to read it, and a Sublime Text 3 syntax highlighting file.
 
+Installation
+------------
+
+### SLAB module for node.js
+
+```
+npm install slab-markup
+```
+
+EXAMPLE
+-------
 Here's an example of a SLAB file:
 
 ```
@@ -33,14 +43,7 @@ example:
 	ding:bat
 ```
   
-To parse it, just do: 
-
-```
-var slab = require("./js/slab")
-var db = slab.loadFile('myfile.slab');
-```
-
-and it will look like this:
+Whose JSON representation is 
 
 ```
 [
@@ -74,6 +77,8 @@ and it will look like this:
   }
 ]
 ```
+
+
 	
 The equivalent YAML is
 
@@ -96,9 +101,28 @@ The equivalent YAML is
     ding: bat
 ```
 
-Which is basically the same as the SLAB version, and has far more robust code.
+Which is basically the same as the SLAB version, and the libraries for parsing that are far more robust/numerous. So you should probably use that instead.
 
-(Warning, it doesn't support depths of >2 right now...)
+API
+---
+
+To parse a string, do
+
+```
+var slab = require("slab-markup")
+var db = slab.parse(myString);
+```
+
+To parse an file, do: 
+
+```
+var slab = require("slab-markup)
+var db = slab.parseSync('myfile.slab');
+```
+
+
+Sublime Text 3 Syntax Highlighting
+----------------------------------
 
 To get the syntax highlighter to work, copy the .sublime-syntax file to your Packages/User directory in sublime text.
 
